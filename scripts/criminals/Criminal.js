@@ -1,7 +1,7 @@
 export const Criminal = (criminal) => {
     return `
     <div class="criminal">
-        <h2>${criminal.name}</h2>
+        <h3>${criminal.name}</h3>
         <p>Age: ${criminal.age}</p>
         <p>Crime: ${criminal.conviction}</p>
         <p>Term start: ${new Date(criminal.incarceration.start).toLocaleDateString('en-US')}</p>
