@@ -1,8 +1,8 @@
 
 export const Officer = (officer) => {
     return `
-        <p>
+        <h3 class="officer">
             ${officer.name}
-        </p>
+        </h3>
     `
 }
