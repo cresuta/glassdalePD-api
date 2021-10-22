@@ -1,17 +1,17 @@
-import { getOfficers, userOfficers } from "./OfficerDataProvider.js";
+import { getOfficers, useOfficers } from "./OfficerDataProvider.js";
 import { Officer } from "./Officer.js";
 
-const contentTarget = document.querySelector('#container');
+const officerContainer = document.querySelector('.officer-list');
 
 export const OfficerList = () => {
     getOfficers()
     .then(() => {
-    let officersArray = userOfficers();
+    let officersArray = useOfficers();
     let officerHTML = ""
     officersArray.forEach(singleOfficer => {
         officerHTML += Officer(singleOfficer);
     })
     
-    contentTarget.innerHTML = officerHTML
+    officerContainer.innerHTML = officerHTML
 })
 }
