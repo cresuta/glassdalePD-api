@@ -1,27 +1,27 @@
 import { useCriminals, getCriminals } from "./CriminalDataProvider.js";
 import { Criminal } from "./Criminal.js";
 
-const criminalContainer = document.querySelector('.criminal-list');
+const criminalListContainer = document.querySelector('.criminal-list');
 const criminalNavLink = document.querySelector("#criminals-nav-link");
 
+// Retrieve all criminals and create a HTML rendered list
 const criminalList = () => {
 
     getCriminals()
     .then(() => {
         let criminalArray = useCriminals();
-        let criminalListHTMLRepresentation = "";
+        let criminalListHTML = "";
 
     criminalArray.forEach(singleCriminal => {
-        criminalListHTMLRepresentation += Criminal(singleCriminal);
+        criminalListHTML += Criminal(singleCriminal);
     });
 
-    criminalContainer.innerHTML += `
-        ${criminalListHTMLRepresentation}
-    `
+    criminalListContainer.innerHTML = criminalListHTML;
     })
     
 }
 
+// Display all criminals when its navbar link is clicked
 export const displayCriminals = () => {
     criminalNavLink.addEventListener("click", function () {
         criminalList();

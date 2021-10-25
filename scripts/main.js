@@ -6,10 +6,4 @@ displayCriminals();
 displayOfficers();
 displayLocations();
 
-const darkModeButton = document.querySelector("#dark-mode")
-
-darkModeButton.addEventListener("click", function(){
-    const bodyElement = document.querySelector('body');
-    bodyElement.classList.toggle("dark-background");
-  })
   
