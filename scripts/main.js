@@ -7,7 +7,13 @@ import { locationListContainer } from "./locations/LocationList.js";
 
 const clearContent = () => {
     const home = document.querySelector('#home-nav-link');
+    const clearBtn = document.querySelector("#clearBtn");
     home.addEventListener("click", function () {
+      officerListContainer.innerHTML = "";
+      criminalListContainer.innerHTML = "";
+      locationListContainer.innerHTML = "";
+    })
+    clearBtn.addEventListener("click", function () {
       officerListContainer.innerHTML = "";
       criminalListContainer.innerHTML = "";
       locationListContainer.innerHTML = "";
