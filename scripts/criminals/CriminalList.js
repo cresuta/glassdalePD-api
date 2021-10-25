@@ -1,8 +1,10 @@
 import { useCriminals, getCriminals } from "./CriminalDataProvider.js";
 import { Criminal } from "./Criminal.js";
 
-export const criminalList = () => {
-    const criminalContainer = document.querySelector('.criminal-list');
+const criminalContainer = document.querySelector('.criminal-list');
+const criminalNavLink = document.querySelector("#criminals-nav-link");
+
+const criminalList = () => {
 
     getCriminals()
     .then(() => {
@@ -18,4 +20,10 @@ export const criminalList = () => {
     `
     })
     
+}
+
+export const displayCriminals = () => {
+    criminalNavLink.addEventListener("click", function () {
+        criminalList();
+    })
 }

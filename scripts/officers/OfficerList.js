@@ -2,8 +2,9 @@ import { getOfficers, useOfficers } from "./OfficerDataProvider.js";
 import { Officer } from "./Officer.js";
 
 const officerContainer = document.querySelector('.officer-list');
+const officerNavLink = document.querySelector('#officers-nav-link');
 
-export const OfficerList = () => {
+const OfficerList = () => {
     getOfficers()
     .then(() => {
     let officersArray = useOfficers();
@@ -14,4 +15,10 @@ export const OfficerList = () => {
     
     officerContainer.innerHTML = officerHTML
 })
+}
+
+export const displayOfficers = () => {
+    officerNavLink.addEventListener("click", function () {
+        OfficerList();
+    })
 }

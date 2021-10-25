@@ -1,8 +1,10 @@
 import { getLocations, useLocations } from "./locationDataProvider.js";
 import { Location } from "./Location.js";
 
-export const locationList = () => {
-    const locationContainer = document.querySelector('.location-list');
+const locationContainer = document.querySelector('.location-list');
+const locationNavLink = document.querySelector('#facilitiesnav-link');
+
+const locationList = () => {
 
     getLocations()
     .then(() => {
@@ -13,5 +15,11 @@ export const locationList = () => {
         })
 
         locationContainer.innerHTML = locationListHTMLRepresentation;
+    })
+}
+
+export const displayLocations = () => {
+    locationNavLink.addEventListener("click", function () {
+        locationList();
     })
 }
