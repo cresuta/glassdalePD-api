@@ -1,77 +1,14 @@
-/* JS event listener practice */
-/* .dark-background {
-  background-color: #2b362e;
-  color: #fafcfb;
-}
-
 h2 {
   text-decoration: underline;
 }
 
-.criminal-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.criminal {
-  border: 1px dotted grey;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex: 0 0 15%;
-  padding: 1em;
-  margin: 1em;
-}
-
-.criminal p {
-  margin: 0;
-}
-
-.officer-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.officer {
-  border: 1px dotted grey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1 0 15%;
-  padding: 1em;
-  margin: 1em;
-} */
-
-/* .location-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.location {
-  border: 1px dotted grey;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex: 1 0 15%;
-  padding: 1em;
-  margin: 1em;
-}
-
-.location p {
-  margin: 0;
-} */
-
 .current-list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
+}
+
+.current-list p {
+  margin: 0;
 }

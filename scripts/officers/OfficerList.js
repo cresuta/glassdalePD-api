@@ -15,7 +15,7 @@ export const OfficerList = () => {
     })
     
     contentTarget.innerHTML = `
-        <h2>Officers</h2>
+        <h2 class="heading">Officers</h2>
         ${officerListHTML}
     `
 })

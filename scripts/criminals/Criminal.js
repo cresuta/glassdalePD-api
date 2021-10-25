@@ -1,7 +1,8 @@
 export const Criminal = (criminal) => {
-    return `
-        <img src="imgs/criminal.png" class="card-img-top" alt="..." />
+  return `
+        <div class="card" style="width: 18rem">
         <div class="card-body">
+        <img src="imgs/criminal.png" class="card-img-top" alt="Cartoon Criminal" />
           <h5 class="card-title">${criminal.name}</h5>
           <p class="card-text">
           Age: ${criminal.age}
@@ -10,5 +11,6 @@ export const Criminal = (criminal) => {
           <p>Term start: ${new Date(criminal.incarceration.start).toLocaleDateString('en-US')}</p>
           <p>Term end: ${new Date(criminal.incarceration.end).toLocaleDateString('en-US')}</p>
         </div>
-    `
+        </div>
+  `
 }

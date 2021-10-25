@@ -16,7 +16,7 @@ export const LocationList = () => {
         })
 
         contentTarget.innerHTML = `
-            <h2>Locations</h2>
+            <h2 class="heading">Locations</h2>
             ${locationListHTML}
         `
     })
