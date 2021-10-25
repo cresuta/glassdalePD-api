@@ -1,5 +1,5 @@
 /* JS event listener practice */
-.dark-background {
+/* .dark-background {
   background-color: #2b362e;
   color: #fafcfb;
 }
@@ -45,9 +45,9 @@ h2 {
   flex: 1 0 15%;
   padding: 1em;
   margin: 1em;
-}
+} */
 
-.location-list {
+/* .location-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -67,4 +67,11 @@ h2 {
 
 .location p {
   margin: 0;
+} */
+
+.current-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 }

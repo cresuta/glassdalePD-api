@@ -1,7 +1,6 @@
 import { getOfficers, useOfficers } from "./OfficerDataProvider.js";
 import { Officer } from "./Officer.js";
 
-// const officerListContainer = document.querySelector('.officer-list');
 const officersNavLink = document.querySelector('#officers-nav-link');
 const contentTarget = document.querySelector(".current-list");
 
@@ -16,7 +15,7 @@ export const OfficerList = () => {
     })
     
     contentTarget.innerHTML = `
-    <h2>Officers</h2>
+        <h2>Officers</h2>
         ${officerListHTML}
     `
 })
@@ -24,6 +23,6 @@ export const OfficerList = () => {
 
 // Display all officers when its navbar link is clicked
 officersNavLink.addEventListener("click", function () {
-        OfficerList();
+    OfficerList();
  })
 

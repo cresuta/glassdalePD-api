@@ -1,8 +1,12 @@
 
 export const Officer = (officer) => {
     return `
-        <h3 class="officer">
-            ${officer.name}
-        </h3>
+        <img src="imgs/officer.jpeg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Officer ${officer.name}</h5>
+          <p class="card-text">
+          Badge ID: ${officer.id}
+          </p>
+        </div>
     `
 }
