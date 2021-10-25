@@ -5,7 +5,7 @@ export const Location = (location) => {
         <img src="imgs/jail-house.png" class="card-img-top" alt="Cartoon Jail House" />
           <h5 class="card-title">${location.facilityName}</h5>
           <p class="card-text">
-          Security Level: ${location.securityLEvel}
+          Security Level: ${location.securityLevel}
           </p>
           <p>Capacity: ${location.capacity}</p>
         </div>
