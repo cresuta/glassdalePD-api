@@ -1,7 +1,7 @@
 import { useCriminals, getCriminals } from "./CriminalDataProvider.js";
 import { Criminal } from "./Criminal.js";
 
-const criminalListContainer = document.querySelector('.criminal-list');
+export const criminalListContainer = document.querySelector('.criminal-list');
 const criminalNavLink = document.querySelector("#criminals-nav-link");
 
 // Retrieve all criminals and create a HTML rendered list

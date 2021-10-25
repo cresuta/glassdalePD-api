@@ -1,7 +1,7 @@
 import { getLocations, useLocations } from "./locationDataProvider.js";
 import { Location } from "./Location.js";
 
-const locationListContainer = document.querySelector('.location-list');
+export const locationListContainer = document.querySelector('.location-list');
 const locationNavLink = document.querySelector('#facilitiesnav-link');
 
 // Retrieve all locations and create a HTML rendered list
