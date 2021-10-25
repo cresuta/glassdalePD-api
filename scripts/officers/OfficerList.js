@@ -1,26 +1,29 @@
 import { getOfficers, useOfficers } from "./OfficerDataProvider.js";
 import { Officer } from "./Officer.js";
 
-export const officerListContainer = document.querySelector('.officer-list');
-const officerNavLink = document.querySelector('#officers-nav-link');
+// const officerListContainer = document.querySelector('.officer-list');
+const officersNavLink = document.querySelector('#officers-nav-link');
+const contentTarget = document.querySelector(".current-list");
 
 // Retrieve all officers and create a HTML rendered list
-const OfficerList = () => {
+export const OfficerList = () => {
     getOfficers()
     .then(() => {
     let officersArray = useOfficers();
-    let officerListHTML = ""
-    officersArray.forEach(singleOfficer => {
+    let officerListHTML = "";
+    officersArray.forEach((singleOfficer) => {
         officerListHTML += Officer(singleOfficer);
     })
     
-    officerListContainer.innerHTML = officerListHTML
+    contentTarget.innerHTML = `
+    <h2>Officers</h2>
+        ${officerListHTML}
+    `
 })
 }
 
 // Display all officers when its navbar link is clicked
-export const displayOfficers = () => {
-    officerNavLink.addEventListener("click", function () {
+officersNavLink.addEventListener("click", function () {
         OfficerList();
-    })
-}
+ })
+

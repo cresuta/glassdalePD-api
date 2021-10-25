@@ -1,11 +1,11 @@
 import { getLocations, useLocations } from "./locationDataProvider.js";
 import { Location } from "./Location.js";
 
-export const locationListContainer = document.querySelector('.location-list');
+const contentTarget = document.querySelector(".current-list");
 const locationNavLink = document.querySelector('#facilitiesnav-link');
 
 // Retrieve all locations and create a HTML rendered list
-const locationList = () => {
+export const LocationList = () => {
 
     getLocations()
     .then(() => {
@@ -15,13 +15,14 @@ const locationList = () => {
             locationListHTML += Location(singleLocation);
         })
 
-        locationListContainer.innerHTML = locationListHTML;
+        contentTarget.innerHTML = `
+            <h2>Locations</h2>
+            ${locationListHTML}
+        `
     })
 }
 
 // Display all locations when its navbar link is clicked
-export const displayLocations = () => {
-    locationNavLink.addEventListener("click", function () {
-        locationList();
-    })
-}
+locationNavLink.addEventListener("click", function () {
+    LocationList();
+})
