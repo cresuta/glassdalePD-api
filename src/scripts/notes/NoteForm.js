@@ -1,7 +1,8 @@
 import { saveNote } from "./NoteDataProvider.js"
 import { NoteList } from "./NoteList.js"
 
-const contentTarget = document.querySelector(".current-list")
+// const contentTarget = document.querySelector(".noteFormContainer");
+const contentTarget = document.querySelector(".current-list");
 
 export const NoteForm = () => {
   contentTarget.innerHTML = `
@@ -41,7 +42,10 @@ contentTarget.addEventListener("click", clickEvent => {
           text: document.querySelector('#note-text').value
       }
 
-      // Select form container, then set to empty string
+      // Clearing form values
+      document.querySelector('#note-date').value = "";
+      document.querySelector('#note-suspect').value = "";
+      document.querySelector('#note-text').value = "";
 
       // Change API state and application state
       saveNote(newNote)

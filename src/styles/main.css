@@ -44,3 +44,12 @@ h2 {
 .current-list p {
   margin: 0;
 }
+
+.noteFormContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#saveNote {
+  width: 10em;
+}
