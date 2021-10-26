@@ -45,10 +45,18 @@ h2 {
   margin: 0;
 }
 
-.noteFormContainer {
+/* .noteFormContainer {
   display: flex;
   justify-content: center;
 }
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+} */
 
 #saveNote {
   width: 10em;

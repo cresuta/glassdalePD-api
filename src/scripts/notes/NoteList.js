@@ -3,7 +3,8 @@ import { getNotes,useNotes } from "./NoteDataProvider.js";
 import { NoteForm } from "./NoteForm.js";
 
 const notesNavLink = document.querySelector('#notes-nav-link');
-const contentTarget = document.querySelector(".noteFormContainer");
+// const contentTarget = document.querySelector(".noteFormContainer");
+const contentTarget = document.querySelector(".current-list");
 
 // Retrieve all officers and create a HTML rendered list
 export const NoteList = () => {
@@ -24,6 +25,6 @@ export const NoteList = () => {
 
 // Display all officers when its navbar link is clicked
 notesNavLink.addEventListener("click", function () {
-    NoteForm();
+    // NoteForm();
     NoteList();
  })
