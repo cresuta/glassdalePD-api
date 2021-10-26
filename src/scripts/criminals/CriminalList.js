@@ -1,6 +1,5 @@
 import { useCriminals, getCriminals } from "./CriminalDataProvider.js";
 import { Criminal } from "./Criminal.js";
-import { NoteForm } from "../notes/NoteForm.js";
 
 const contentTarget = document.querySelector(".current-list");
 const criminalNavLink = document.querySelector("#criminals-nav-link");
@@ -27,7 +26,6 @@ export const CriminalList = () => {
 
 // Display all criminals when its navbar link is clicked
 criminalNavLink.addEventListener("click", function () {
-    NoteForm();
     CriminalList();
 })
 

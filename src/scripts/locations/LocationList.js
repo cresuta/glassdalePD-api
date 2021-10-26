@@ -1,6 +1,5 @@
 import { getLocations, useLocations } from "./locationDataProvider.js";
 import { Location } from "./Location.js";
-import { NoteForm } from "../notes/NoteForm.js";
 
 const contentTarget = document.querySelector(".current-list");
 const locationNavLink = document.querySelector('#facilitiesnav-link');
@@ -25,6 +24,5 @@ export const LocationList = () => {
 
 // Display all locations when its navbar link is clicked
 locationNavLink.addEventListener("click", function () {
-    NoteForm();
     LocationList();
 })

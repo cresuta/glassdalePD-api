@@ -1,6 +1,5 @@
 import { getOfficers, useOfficers } from "./OfficerDataProvider.js";
 import { Officer } from "./Officer.js";
-import { NoteForm } from "../notes/NoteForm.js";
 
 const officersNavLink = document.querySelector('#officers-nav-link');
 const contentTarget = document.querySelector(".current-list");
@@ -24,7 +23,6 @@ export const OfficerList = () => {
 
 // Display all officers when its navbar link is clicked
 officersNavLink.addEventListener("click", function () {
-    NoteForm();
     OfficerList();
  })
 
