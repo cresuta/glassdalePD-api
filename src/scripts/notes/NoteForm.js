@@ -29,7 +29,7 @@ document.querySelector('body').addEventListener("click", clickEvent => {
 
 export const NoteForm = () => {
   contentTarget.innerHTML = `
-  
+    
     <label for="noteDate">Date:</label>
     <input type="date" name="noteDate" id="note-date" />
   
