@@ -20,6 +20,7 @@ eventHub.addEventListener("change", (eventObj) => {
 
 const render = (convictionsCollection) => {
     contentTarget.innerHTML = `
+        <h2>Criminals</h2>
         <select class="dropdown" id="crimeSelect">
             <option value="0">Please select a crime...</option>
             ${
