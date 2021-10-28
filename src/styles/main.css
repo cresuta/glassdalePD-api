@@ -35,6 +35,11 @@ h6 {
   margin-top: 1em;
 }
 
+.dropdown {
+  margin-bottom: 1em;
+  width: 250px;
+}
+
 .current-list {
   display: flex;
   flex-wrap: wrap;
