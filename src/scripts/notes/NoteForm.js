@@ -7,24 +7,26 @@ const contentTarget = document.querySelector(".noteFormContainer");
 // Handle browser-generated click event in component
 document.querySelector('body').addEventListener("click", clickEvent => {
   if (clickEvent.target.id === "saveNote") {
-
-      // Make a new object representation of a note
-      const newNote = {
+      if (!document.querySelector('#note-date').value || !document.querySelector('#note-suspect').value || !document.querySelector('#note-text').value) {
+        alert('Please fill out the entire form.')
+      } else {
+        // Make a new object representation of a note
+        const newNote = {
           date: document.querySelector('#note-date').value,
           suspect: document.querySelector('#note-suspect').value,
           text: document.querySelector('#note-text').value
+        }
+
+        // Clearing form values
+        document.querySelector('#note-date').value = "";
+        document.querySelector('#note-suspect').value = "";
+        document.querySelector('#note-text').value = "";
+
+        // Change API state and application state
+        saveNote(newNote)
+        .then(NoteList) // Refresh your list of notes once you've saved your new one
       }
-
-      // Clearing form values
-      document.querySelector('#note-date').value = "";
-      document.querySelector('#note-suspect').value = "";
-      document.querySelector('#note-text').value = "";
-
-      console.log(newNote)
-      // Change API state and application state
-      saveNote(newNote)
-      .then(NoteList) // Refresh your list of notes once you've saved your new one
-  }
+    }
 })
 
 export const NoteForm = () => {
