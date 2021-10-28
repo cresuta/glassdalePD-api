@@ -59,6 +59,10 @@ h6 {
   width: 200px;
 }
 
-#saveNote {
-  width: 10em;
+#saveNote i {
+  margin-right: 5px;
+}
+
+#note-text {
+  resize: none;
 }

@@ -64,7 +64,7 @@ export const NoteForm = () => {
   </div>
   <div class="col-12">
     <label for="noteText" class="form-label">Notes:</label>
-    <input type="text" name="noteText" class="form-control" id="note-text" placeholder="...">
+    <textarea name="noteText" class="form-control" id="note-text" cols="30" rows="2" placeholder="..."></textarea>
   </div>
   <div class="col-12">
     <button type="submit" class="btn btn-light btn-outline-dark" id="saveNote">
