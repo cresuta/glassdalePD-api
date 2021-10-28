@@ -59,8 +59,16 @@ h6 {
   width: 200px;
 }
 
+.form-control {
+  font-size: 1em;
+}
+
 #saveNote i {
   margin-right: 5px;
+}
+
+#saveNote {
+  font-size: 1em;
 }
 
 #note-text {
