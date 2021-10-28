@@ -25,5 +25,6 @@ export const LocationList = () => {
 // Display all locations when its navbar link is clicked
 locationNavLink.addEventListener("click", function () {
     document.querySelector('.filters-crime').innerHTML = "";
+    document.querySelector('.noteFormContainer').innerHTML = "";
     LocationList();
 })

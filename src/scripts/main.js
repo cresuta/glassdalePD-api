@@ -6,4 +6,4 @@ import { NoteList } from "./notes/NoteList.js";
 import {ConvictionSelect} from "./convictions/ConvictionSelect.js"
 
 NoteForm();
-
+NoteList();
