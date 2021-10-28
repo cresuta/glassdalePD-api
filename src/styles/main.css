@@ -30,8 +30,9 @@ h6 {
   font-weight: bolder;
 }
 
-h2 {
+.heading {
   text-decoration: underline;
+  margin-top: 1em;
 }
 
 .current-list {
