@@ -1,4 +1,6 @@
 import { useConvictions, getConvictions } from "./ConvictionDataProvider.js";
+import { CriminalList } from "../criminals/CriminalList.js";
+import { Criminal } from "../criminals/Criminal.js";
 
 const contentTarget = document.querySelector(".filters-crime");
 const eventHub = document.querySelector("body");
@@ -17,7 +19,7 @@ eventHub.addEventListener("change", (eventObj) => {
     if(eventObj.target.id === "crimeSelect"){
         console.log("You selected something from the crime dropdown")
         console.log("This is the crime that was selected: ", eventObj.target.value)
-        
+        CriminalList(eventObj.target.value)
     }
 })
 
