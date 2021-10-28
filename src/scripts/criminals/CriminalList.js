@@ -4,6 +4,7 @@ import { Criminal } from "./Criminal.js";
 const contentTarget = document.querySelector(".current-list");
 const criminalNavLink = document.querySelector("#criminals-nav-link");
 
+
 // Retrieve all criminals and create a HTML rendered list
 export const CriminalList = () => {
 

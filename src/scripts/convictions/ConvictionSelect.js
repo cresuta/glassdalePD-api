@@ -1,6 +1,7 @@
 import { useConvictions, getConvictions } from "./ConvictionDataProvider.js";
 
 const contentTarget = document.querySelector(".filters-crime");
+const eventHub = document.querySelector("body");
 
 export const ConvictionSelect = () => {
     getConvictions()
@@ -9,6 +10,16 @@ export const ConvictionSelect = () => {
         render(convictions);
     })
 }
+
+eventHub.addEventListener("change", (eventObj) => {
+    console.log("Element you clicked on: ", eventObj.target)
+
+    if(eventObj.target.id === "crimeSelect"){
+        console.log("You selected something from the crime dropdown")
+        console.log("This is the crime that was selected: ", eventObj.target.value)
+        
+    }
+})
 
 const render = (convictionsCollection) => {
     contentTarget.innerHTML = `
