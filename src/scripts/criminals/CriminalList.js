@@ -1,5 +1,6 @@
 import { useCriminals, getCriminals } from "./CriminalDataProvider.js";
 import { Criminal } from "./Criminal.js";
+import { ConvictionSelect } from "../convictions/ConvictionSelect.js";
 
 const contentTarget = document.querySelector(".current-list");
 const criminalNavLink = document.querySelector("#criminals-nav-link");
@@ -30,6 +31,7 @@ export const CriminalList = (convictionFilter) => {
 
 // Display all criminals when its navbar link is clicked
 criminalNavLink.addEventListener("click", function () {
+    ConvictionSelect();
     CriminalList();
 })
 
