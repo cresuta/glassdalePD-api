@@ -22,7 +22,6 @@ export const OfficerSelect = () => {
 
 const render = (officersCollection) => {
     contentTarget.innerHTML = `
-        <h2 class="heading">Criminals</h2>
         <select class="form-select dropdown" id="officerSelect">
             <option value="0">Please select an officer...</option>
             ${
