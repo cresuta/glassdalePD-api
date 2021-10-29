@@ -4,7 +4,7 @@ import { OfficerList } from "./OfficerList.js";
 const contentTarget = document.querySelector(".filters-officers");
 const eventHub = document.querySelector("body");
 
-export const OfficersSelect = () => {
+export const OfficerSelect = () => {
     getOfficers()
     .then(() => {
         const officers = useOfficers();
@@ -23,15 +23,12 @@ eventHub.addEventListener("change", changeEvent => {
 const render = (officersCollection) => {
     contentTarget.innerHTML = `
         <h2 class="heading">Criminals</h2>
-        <select class="form-select dropdown" id="crimeSelect">
-            <option value="0">Please select a crime...</option>
-        </select>
         <select class="form-select dropdown" id="officerSelect">
             <option value="0">Please select an officer...</option>
             ${
                 officersCollection.map((officer) => {
                     const officerName = officer.name;
-                    return `<option>${convictionName}</option>`
+                    return `<option>${officerName}</option>`
                 })
             }
         </select>

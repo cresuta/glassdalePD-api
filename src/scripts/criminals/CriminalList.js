@@ -1,15 +1,14 @@
 import { useCriminals, getCriminals } from "./CriminalDataProvider.js";
 import { Criminal } from "./Criminal.js";
 import { ConvictionSelect } from "../convictions/ConvictionSelect.js";
-import { getOfficers, useOfficers } from "../officers/OfficerDataProvider.js";
-import { OfficersSelect } from "../officers/OfficerSelect.js";
+import { getOfficers } from "../officers/OfficerDataProvider.js";
 
 const contentTarget = document.querySelector(".current-list");
 const criminalNavLink = document.querySelector("#criminals-nav-link");
 
 
 // Retrieve all criminals and create a HTML rendered list
-export const CriminalList = (convictionFilter, officerFilter) => {
+export const CriminalList = (convictionFilter) => {
 
     contentTarget.innerHTML = "";
 
@@ -28,17 +27,6 @@ export const CriminalList = (convictionFilter, officerFilter) => {
         contentTarget.innerHTML += Criminal(singleCriminal);
     });
     })
-
-    getOfficers()
-    .then(() => {
-        let officerArray = useOfficers();
-    
-        if (officerFilter) {
-            officerArray = officerArray.filter((singleOfficer) => {
-                return singleOfficer ? singleOfficer.name === singleCriminal.arrestingOfficer : false;
-            })
-        }
-    })
     
 }
 
@@ -46,7 +34,6 @@ export const CriminalList = (convictionFilter, officerFilter) => {
 criminalNavLink.addEventListener("click", function () {
     document.querySelector('.noteFormContainer').innerHTML = "";
     ConvictionSelect();
-    OfficersSelect();
     CriminalList();
 })
 
