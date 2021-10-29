@@ -1,8 +1,9 @@
 import { getOfficers, useOfficers } from "./OfficerDataProvider.js";
 import { Officer } from "./Officer.js";
+import { OfficersSelect } from "./OfficerSelect.js";
 
-const officersNavLink = document.querySelector('#officers-nav-link');
 const contentTarget = document.querySelector(".current-list");
+const officersNavLink = document.querySelector('#officers-nav-link');
 
 // Retrieve all officers and create a HTML rendered list
 export const OfficerList = () => {
