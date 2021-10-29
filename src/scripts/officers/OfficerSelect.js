@@ -12,13 +12,13 @@ export const OfficerSelect = () => {
     })
 }
 
-eventHub.addEventListener("change", changeEvent => {
-    if (changeEvent.target.id === "officerSelect") {
-        // Get the name of the selected officer
-        const selectedOfficer = changeEvent.target.value
-        OfficerList(selectedOfficer);
-    }
-})
+// eventHub.addEventListener("change", changeEvent => {
+//     if (changeEvent.target.id === "officerSelect") {
+//         // Get the name of the selected officer
+//         const selectedOfficer = changeEvent.target.value
+//         OfficerList(selectedOfficer);
+//     }
+// })
 
 const render = (officersCollection) => {
     contentTarget.innerHTML = `

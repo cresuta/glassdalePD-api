@@ -6,7 +6,7 @@ const contentTarget = document.querySelector(".current-list");
 const officersNavLink = document.querySelector('#officers-nav-link');
 
 // Retrieve all officers and create a HTML rendered list
-export const OfficerList = () => {
+export const OfficerList = (officerFilter) => {
     getOfficers()
     .then(() => {
     let officersArray = useOfficers();
