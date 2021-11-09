@@ -78,6 +78,14 @@ i {
   margin: 1em 0;
 }
 
+.edit-form {
+  margin-top: 1em;
+}
+
+.edit-form button {
+  margin: 1em 0;
+}
+
 /* #delete #note-text {
   resize: none;
 } */
