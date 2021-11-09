@@ -1,11 +1,21 @@
 import { deleteNote } from "./NoteDataProvider.js"
 import { NoteList } from "./NoteList.js";
+import {NoteEditForm} from "./NoteEditForm.js"
 
+// Click listener for delete button
 document.querySelector('.current-list').addEventListener("click", clickEvent => {
     if(clickEvent.target.id.startsWith("deleteNote")) {
         const idToDelete = clickEvent.target.id.split("-")[1];
         deleteNote(idToDelete)
         .then(NoteList)
+    }
+})
+
+// Click listener for edit button
+document.querySelector('.current-list').addEventListener("click", clickEvent => {
+    if(clickEvent.target.id.startsWith("editNote")) {
+        const idToEdit = +clickEvent.target.id.split("-")[1];
+        NoteEditForm(idToEdit)
     }
 })
 
