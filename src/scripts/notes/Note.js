@@ -1,3 +1,14 @@
+import { deleteNote } from "./NoteDataProvider.js"
+import { NoteList } from "./NoteList.js";
+
+document.querySelector('.current-list').addEventListener("click", clickEvent => {
+    if(clickEvent.target.id.startsWith("deleteNote")) {
+        const idToDelete = clickEvent.target.id.split("-")[1];
+        deleteNote(idToDelete)
+        .then(NoteList)
+    }
+})
+
 export const Note = (note) => {
     return `
         <div class="card" style="width: 18rem">
@@ -8,7 +19,7 @@ export const Note = (note) => {
             <p class="card-text">${note.text}</p>
         </div>
         <div class="card-delete">
-            <button type="submit" class="btn btn-light btn-outline-dark" id="deleteNote">
+            <button type="submit" class="btn btn-light btn-outline-dark" id="deleteNote-${note.id}">
                 <i class="bi bi-trash"></i>Delete Note</button>
             </div>
         </div>
