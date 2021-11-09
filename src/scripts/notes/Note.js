@@ -7,6 +7,10 @@ export const Note = (note) => {
             <p class="card-text">Suspect In Question - ${note.suspect}</p>
             <p class="card-text">${note.text}</p>
         </div>
+        <div class="card-delete">
+            <button type="submit" class="btn btn-light btn-outline-dark" id="deleteNote">
+                <i class="bi bi-trash"></i>Delete Note</button>
+            </div>
         </div>
     `
 }
