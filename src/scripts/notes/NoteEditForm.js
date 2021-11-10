@@ -1,16 +1,21 @@
-import {useNotes} from "./NoteDataProvider.js"
+import {useNotes, updateNote} from "./NoteDataProvider.js"
+import { NoteList } from "./NoteList.js"
 
 // We're going to print the edit form where the "add note" form usually goes. We could move it around on the page by changing our content target.
 const contentTarget = document.querySelector(".noteFormContainer")
 
 contentTarget.addEventListener("click", clickEvent => {
     if (clickEvent.target.id.startsWith("saveNote")) {
+        
         const editedNote = {
-            id: 1,
+            id: parseInt(clickEvent.target.id.split("-")[1]),
             date: document.querySelector('#note-date').value,
             suspect: document.querySelector('#note-suspect').value,
             text: document.querySelector('#note-text').value
         }
+
+        updateNote(editedNote)
+        .then(NoteList)
     }
 })
 
@@ -36,7 +41,7 @@ export const NoteEditForm = (noteId) => {
   </div>
   <div class="col-12">
     <label for="noteText" class="form-label">Notes:</label>
-    <input type="text" class="form-control" name="noteText" value="${noteWeWantToEdit.text}" id="note-suspect" />
+    <input type="text" class="form-control" name="noteText" value="${noteWeWantToEdit.text}" id="note-text" />
   </div>
   <div class="col-12">
     <button type="submit" class="btn btn-light btn-outline-dark" id="saveNote-${noteId}">
