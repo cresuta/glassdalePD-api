@@ -15,8 +15,6 @@ document.querySelector('body').addEventListener("click", clickEvent => {
           text: document.querySelector('#note-text').value
         }
 
-        console.log(newNote)
-
         // Clearing form values
         document.querySelector('#note-date').value = "";
         document.querySelector('#note-suspect').value = "";
