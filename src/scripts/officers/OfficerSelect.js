@@ -14,7 +14,7 @@ export const OfficerSelect = () => {
 const render = (officersCollection) => {
     contentTarget.innerHTML = `
         <select class="form-select dropdown" id="officerSelect">
-            <option value="0">Please select an officer...</option>
+            <option value="0">Filter by officer...</option>
             ${
                 officersCollection.map((officer) => {
                     const officerName = officer.name;

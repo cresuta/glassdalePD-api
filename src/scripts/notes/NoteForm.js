@@ -53,7 +53,7 @@ export const NoteForm = () => {
 
   contentTarget.innerHTML = `
     
-  <form class="row g-3">
+  <form class="row g-3 note-form text-white bg-secondary">
   <h2>Note Form</h2>
   <div class="col-md-12">
     <label for="noteDate" class="form-label">Date</label>

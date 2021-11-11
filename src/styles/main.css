@@ -56,7 +56,8 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 200px;
+  width: 400px;
+  margin: 0 auto;
 }
 
 .form-control {
@@ -78,12 +79,18 @@ i {
   margin: 1em 0;
 }
 
-.edit-form {
-  margin-top: 1em;
+.note-form {
+  margin-top: 5em;
   border-radius: 10px;
   padding: 1em;
 }
 
-.edit-form button {
-  margin: 1em 0;
+.edit-form {
+  margin-top: 5em;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.edit-form input {
+  border: 2px solid red;
 }

@@ -24,7 +24,7 @@ const render = (convictionsCollection) => {
     contentTarget.innerHTML = `
         <h2 class="heading">Criminals</h2>
         <select class="form-select dropdown" id="crimeSelect">
-            <option value="0">Please select a crime...</option>
+            <option value="0">Filter by crime...</option>
             ${
                 convictionsCollection.map((conviction) => {
                     const convictionName = conviction.name;
