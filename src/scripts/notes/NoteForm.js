@@ -54,6 +54,7 @@ export const NoteForm = () => {
   contentTarget.innerHTML = `
     
   <form class="row g-3">
+  <h2>Note Form</h2>
   <div class="col-md-12">
     <label for="noteDate" class="form-label">Date</label>
     <input type="date" name="noteDate" class="form-control" id="note-date">

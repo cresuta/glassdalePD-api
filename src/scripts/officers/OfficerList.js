@@ -25,6 +25,7 @@ export const OfficerList = (officerFilter) => {
 // Display all officers when its navbar link is clicked
 officersNavLink.addEventListener("click", function () {
     document.querySelector('.filters-crime').innerHTML = "";
+    document.querySelector('.filters-officers').innerHTML = "";
     document.querySelector('.noteFormContainer').innerHTML = "";
     OfficerList();
  })
