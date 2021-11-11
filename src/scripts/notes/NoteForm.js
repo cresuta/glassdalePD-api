@@ -17,6 +17,8 @@ document.querySelector('body').addEventListener("click", clickEvent => {
           text: document.querySelector('#note-text').value
         }
 
+        console.log(newNote)
+
         // Clearing form values
         document.querySelector('#note-date').value = "";
         document.querySelector('#note-suspect').value = "";
@@ -30,26 +32,6 @@ document.querySelector('body').addEventListener("click", clickEvent => {
 })
 
 export const NoteForm = () => {
-//   contentTarget.innerHTML = `
-    
-//     <label for="noteDate">Date:</label>
-//     <input type="date" name="noteDate" id="note-date" />
-  
-//     <label for="noteSuspect">Suspect In Question:</label>
-//     <input type="text" name="noteSuspect" id="note-suspect" />
-
-//     <label for="noteText">Notes:</label>
-//     <textarea name="noteText" id="note-text" cols="30" rows="2"></textarea>
-
-// <button
-//   type="button"
-//   class="btn btn-light btn-outline-dark"
-//   id="saveNote"
-// >
-//   <i class="bi bi-journal-check"></i>
-//   Save Note
-// </button>
-//   `
 
   contentTarget.innerHTML = `
     
@@ -65,7 +47,7 @@ export const NoteForm = () => {
   </div>
   <div class="col-12">
     <label for="noteText" class="form-label">Notes:</label>
-    <input type="text" name="noteText" class="form-control" id="note-suspect" />
+    <input type="text" name="noteText" class="form-control" id="note-text" />
   </div>
   <div class="col-12">
     <button type="submit" class="btn btn-light btn-outline-dark" id="saveNote">
