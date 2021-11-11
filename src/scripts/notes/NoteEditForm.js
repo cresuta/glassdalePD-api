@@ -29,7 +29,7 @@ export const NoteEditForm = (noteId) => {
     // Print the form
     // We'll use the HTML value attribute to pre-populate our form fields with the note's info
     contentTarget.innerHTML = `
-    <div class="edit-form"> 
+    <div class="edit-form row g-3 text-white bg-secondary"> 
         <h2 class="editNote-heading">Edit Note</h2>     
   <div class="col-md-12">
     <label for="noteDate" class="form-label">Date</label>

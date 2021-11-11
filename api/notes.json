@@ -1,22 +1,22 @@
 {
   "notes": [
     {
+      "id": 1,
       "date": "2021-10-26",
       "suspect": "Jimmy",
-      "text": "He done did it",
-      "id": 1
+      "text": "He done did it"
     },
     {
+      "id": 2,
       "date": "2021-11-09",
       "suspect": "Mark",
-      "text": "He did it!",
-      "id": 2
+      "text": "He did it!"
     },
     {
       "id": 3,
       "date": "2021-11-10",
       "suspect": "Landon",
-      "text": "HOW YALL DOING"
+      "text": "We noticed his voice became shaky as he would talk"
     }
   ]
 }
