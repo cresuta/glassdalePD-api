@@ -4,7 +4,6 @@ import { Location } from "./Location.js";
 const contentTarget = document.querySelector(".current-list");
 const locationNavLink = document.querySelector('#facilitiesnav-link');
 
-// Retrieve all locations and create a HTML rendered list
 export const LocationList = () => {
 
     getLocations()

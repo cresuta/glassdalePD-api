@@ -1,4 +1,3 @@
-
 export const Officer = (officer) => {
     return `
         <div class="card" style="width: 18rem">

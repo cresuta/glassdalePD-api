@@ -2,15 +2,13 @@ import { saveNote } from "./NoteDataProvider.js"
 import { NoteList } from "./NoteList.js"
 
 const contentTarget = document.querySelector(".noteFormContainer");
-// const contentTarget = document.querySelector(".current-list");
 
-// Handle browser-generated click event in component
 document.querySelector('body').addEventListener("click", clickEvent => {
   if (clickEvent.target.id === "saveNote") {
       if (!document.querySelector('#note-date').value || !document.querySelector('#note-suspect').value || !document.querySelector('#note-text').value) {
         alert('Please fill out the entire form.')
       } else {
-        // Make a new object representation of a note
+        
         const newNote = {
           date: document.querySelector('#note-date').value,
           suspect: document.querySelector('#note-suspect').value,
@@ -26,7 +24,7 @@ document.querySelector('body').addEventListener("click", clickEvent => {
 
         // Change API state and application state
         saveNote(newNote)
-        .then(NoteList) // Refresh your list of notes once you've saved your new one
+        .then(NoteList)
       }
     }
 })

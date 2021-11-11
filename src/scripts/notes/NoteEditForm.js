@@ -1,7 +1,6 @@
 import {useNotes, updateNote} from "./NoteDataProvider.js"
 import { NoteList } from "./NoteList.js"
 
-// We're going to print the edit form where the "add note" form usually goes. We could move it around on the page by changing our content target.
 const contentTarget = document.querySelector(".noteFormContainer")
 
 contentTarget.addEventListener("click", clickEvent => {
@@ -26,8 +25,6 @@ export const NoteEditForm = (noteId) => {
     // Find the note that we clicked on by its unique id
     const noteWeWantToEdit = allNotes.find(singleNote=> singleNote.id === noteId)
 
-    // Print the form
-    // We'll use the HTML value attribute to pre-populate our form fields with the note's info
     contentTarget.innerHTML = `
     <div class="edit-form row g-3 text-white bg-secondary"> 
         <h2>Edit Note</h2>     
