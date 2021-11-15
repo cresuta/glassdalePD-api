@@ -41,6 +41,24 @@
       "suspect": "Justin",
       "text": "He was not at his house the night of the crime, but he has no recollection of where he was that night",
       "id": 9
+    },
+    {
+      "date": "2021-11-15",
+      "criminalId": "1",
+      "text": "TEST",
+      "id": 10
+    },
+    {
+      "date": "2021-11-15",
+      "criminalId": 7,
+      "text": "TEST2",
+      "id": 11
+    },
+    {
+      "date": "2021-11-15",
+      "criminalId": 5,
+      "text": "TEST3",
+      "id": 12
     }
   ]
 }

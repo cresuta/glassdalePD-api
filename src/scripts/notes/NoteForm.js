@@ -12,9 +12,8 @@ document.querySelector('body').addEventListener("click", clickEvent => {
         
         const newNote = {
           date: document.querySelector('#note-date').value,
-          suspect: document.querySelector('#note-suspect').value,
-          text: document.querySelector('#note-text').value,
-          criminalId: document.querySelector('#').value
+          criminalId: parseInt(document.querySelector('#note-suspect').value),
+          text: document.querySelector('#note-text').value
         }
 
         // Clearing form values

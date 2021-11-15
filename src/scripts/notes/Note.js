@@ -19,13 +19,13 @@ document.querySelector('.current-list').addEventListener("click", clickEvent => 
     }
 })
 
-export const Note = (note) => {
+export const Note = (note,criminal) => {
     return `
         <div class="card" style="width: 20rem">
         <div class="card-body">
             <i class="bi bi-journal-text"></i>
             <h5 class="card-title">${new Date(note.date).toLocaleDateString('en-US')}</h5>
-            <p class="card-text">Suspect In Question - ${note.suspect}</p>
+            <p class="card-text">Suspect In Question - ${console.log(criminal)}</p>
             <p class="card-text">${note.text}</p>
         </div>
         <div class="card-btns">
