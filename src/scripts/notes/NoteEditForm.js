@@ -57,7 +57,8 @@ export const NoteEditForm = (noteId) => {
         const notesArray = useNotes();
         const criminalsArray = useCriminals();
       
-            const noteWeWantToEdit = notesArray.find(singleNote=> singleNote.id === noteId)
+            const noteWeWantToEdit = notesArray.find(singleNote => singleNote.id === noteId)
+            const criminalWeWantToEdit = criminalsArray.find(criminal => criminal.id === noteWeWantToEdit.criminalId)
             // const relatedCriminal = criminalsArray.find(criminal => criminal.id === noteWeWantToEdit.id)
             contentTarget.innerHTML = `
             <div class="edit-form row g-3 text-white bg-secondary"> 
@@ -69,7 +70,7 @@ export const NoteEditForm = (noteId) => {
       <div class="col-md-12">
         <label for="noteSuspect" class="form-label">Suspect In Question:</label>
         <select name="noteSuspect" class="criminalSelect form-control" id="note-suspect">
-        <option value="${noteWeWantToEdit.criminalId}">Select a criminal...</option>
+        <option value="${noteWeWantToEdit.criminalId}">${criminalWeWantToEdit.name}</option>
         ${
           criminalsArray.map((criminal) => {
               return `<option value="${criminal.id}">${criminal.name}</option>`
