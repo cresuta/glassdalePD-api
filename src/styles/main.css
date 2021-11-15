@@ -44,7 +44,6 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
 }
 
 .current-list p {
@@ -68,15 +67,33 @@ i {
   margin-right: 5px;
 }
 
-.note-btn {
-  font-size: 1em;
-  width: 10em;
+.card {
+  margin: 1em auto;
+}
+
+.card-criminalName {
+  font-size: 1.5em;
+}
+
+.card-noteText {
+  padding-top: 1em;
+}
+
+.card-title {
+  text-align: right;
 }
 
 .card-btns {
   display: flex;
-  justify-content: space-around;
-  margin: 1em 0;
+  justify-content: flex-end;
+}
+
+.note-btn {
+  font-size: 1.3em;
+}
+
+.note-btn i {
+  margin: auto;
 }
 
 .note-form {

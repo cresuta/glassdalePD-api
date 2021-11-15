@@ -2,9 +2,21 @@
   "notes": [
     {
       "id": 16,
-      "date": "2021-11-16",
+      "date": "2021-11-04",
       "criminalId": 13,
       "text": "He was not at his house the night of the crime, but he has no recollection of where he was that night"
+    },
+    {
+      "id": 17,
+      "date": "2021-11-09",
+      "criminalId": 12,
+      "text": "She was at the scene of the crime right before we showed up"
+    },
+    {
+      "date": "2021-11-17",
+      "criminalId": 20,
+      "text": "She was at the scene of the crime right before we showed up",
+      "id": 18
     }
   ]
 }
