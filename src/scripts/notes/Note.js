@@ -25,7 +25,7 @@ export const Note = (note,criminal) => {
         <div class="card-body">
             <i class="bi bi-journal-text"></i>
             <h5 class="card-title">${new Date(note.date).toLocaleDateString('en-US')}</h5>
-            <p class="card-text">Suspect In Question - ${console.log(criminal)}</p>
+            <p class="card-text">Suspect In Question - ${criminal.name}</p>
             <p class="card-text">${note.text}</p>
         </div>
         <div class="card-btns">

@@ -1,54 +1,6 @@
 {
   "notes": [
     {
-      "id": 3,
-      "date": "2021-11-10",
-      "suspect": "Landon",
-      "text": "We noticed his voice became shaky as he would talk"
-    },
-    {
-      "id": 4,
-      "date": "2021-11-11",
-      "suspect": "Derrick",
-      "text": "Testing"
-    },
-    {
-      "date": "2021-11-12",
-      "suspect": "Mark",
-      "text": "He was at the scene of the crime right before we showed up",
-      "id": 5
-    },
-    {
-      "date": "2021-11-12",
-      "suspect": "Todd",
-      "text": "He was there when it happened",
-      "id": 6
-    },
-    {
-      "id": 7,
-      "date": "2021-11-12",
-      "suspect": "Chad",
-      "text": "He was not at his house the night of the crime, but he has no recollection of where he was that night"
-    },
-    {
-      "date": "2021-11-12",
-      "suspect": "Matthew",
-      "text": "He was at the scene of the crime right before we showed up",
-      "id": 8
-    },
-    {
-      "date": "2021-11-15",
-      "suspect": "Justin",
-      "text": "He was not at his house the night of the crime, but he has no recollection of where he was that night",
-      "id": 9
-    },
-    {
-      "date": "2021-11-15",
-      "criminalId": "1",
-      "text": "TEST",
-      "id": 10
-    },
-    {
       "date": "2021-11-15",
       "criminalId": 7,
       "text": "TEST2",
@@ -59,6 +11,18 @@
       "criminalId": 5,
       "text": "TEST3",
       "id": 12
+    },
+    {
+      "date": "2021-11-15",
+      "criminalId": 3,
+      "text": "TEST4",
+      "id": 13
+    },
+    {
+      "date": "2021-11-15",
+      "criminalId": 18,
+      "text": "TEST5",
+      "id": 14
     }
   ]
 }

@@ -9,7 +9,7 @@ const contentTarget = document.querySelector(".current-list");
 // Retrieve all officers and create a HTML rendered list
 export const NoteList = () => {
     getNotes()
-    .then(getCriminals())
+    .then(getCriminals)
     .then(() => {
         const notesArray = useNotes();
         const criminalsArray = useCriminals();
@@ -17,11 +17,11 @@ export const NoteList = () => {
         notesArray.map(note => {
             const relatedCriminal = criminalsArray.find(criminal => criminal.id === note.criminalId)
             noteListHTML += Note(note,relatedCriminal);
-        })
-        contentTarget.innerHTML = `
+            contentTarget.innerHTML = `
             <h2 class="heading">Notes</h2>
             ${noteListHTML}
         `
+        })
     })
 }
 

@@ -12,7 +12,7 @@ document.querySelector('body').addEventListener("click", clickEvent => {
         
         const newNote = {
           date: document.querySelector('#note-date').value,
-          criminalId: parseInt(document.querySelector('#note-suspect').value),
+          criminalId: parseInt(document.querySelector('#note-suspect').value), 
           text: document.querySelector('#note-text').value
         }
 
