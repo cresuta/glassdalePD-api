@@ -91,6 +91,7 @@ i {
   padding: 1em;
 }
 
-.edit-form input {
+.edit-form input,
+.edit-form select {
   border: 2px solid red;
 }
