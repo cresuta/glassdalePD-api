@@ -20,36 +20,6 @@ contentTarget.addEventListener("click", clickEvent => {
     }
 })
 
- /* export const NoteEditForm = (noteId) => {
-    // Give this component access to our application's notes state
-    const allNotes = useNotes();
-
-    // Find the note that we clicked on by its unique id
-    const noteWeWantToEdit = allNotes.find(singleNote=> singleNote.id === noteId)
-
-    contentTarget.innerHTML = `
-    <div class="edit-form row g-3 text-white bg-secondary"> 
-        <h2>Edit Note</h2>     
-  <div class="col-md-12">
-    <label for="noteDate" class="form-label">Date</label>
-    <input type="date" name="noteDate" class="form-control" id="note-date" value="${noteWeWantToEdit.date}">
-  </div>
-  <div class="col-md-12">
-    <label for="noteSuspect" class="form-label">Suspect In Question:</label>
-    <input type="text" name="noteSuspect" class="form-control" id="note-suspect" placeholder="Full Name" value="${noteWeWantToEdit.suspect}">
-  </div>
-  <div class="col-12">
-    <label for="noteText" class="form-label">Notes:</label>
-    <input type="text" class="form-control" name="noteText" value="${noteWeWantToEdit.text}" id="note-text">
-  </div>
-  <div class="col-12">
-    <button type="submit" class="btn btn-light btn-outline-dark" id="saveNote-${noteId}">
-    <i class="bi bi-journal-check"></i>Save Note</button>
-  </div>
-    </div>
-    `
-} */
-
 export const NoteEditForm = (noteId) => {
   getCriminals()
   .then(getNotes)
@@ -57,9 +27,9 @@ export const NoteEditForm = (noteId) => {
         const notesArray = useNotes();
         const criminalsArray = useCriminals();
       
-            const noteWeWantToEdit = notesArray.find(singleNote => singleNote.id === noteId)
-            const criminalWeWantToEdit = criminalsArray.find(criminal => criminal.id === noteWeWantToEdit.criminalId)
-            // const relatedCriminal = criminalsArray.find(criminal => criminal.id === noteWeWantToEdit.id)
+        const noteWeWantToEdit = notesArray.find(singleNote => singleNote.id === noteId)
+        const criminalWeWantToEdit = criminalsArray.find(criminal => criminal.id === noteWeWantToEdit.criminalId)
+      
             contentTarget.innerHTML = `
             <div class="edit-form row g-3 text-white bg-secondary"> 
             <h2>Edit Note</h2>     
