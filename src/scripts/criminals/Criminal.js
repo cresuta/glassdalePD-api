@@ -1,6 +1,6 @@
 export const Criminal = (criminal) => {
   return `
-        <div class="card" style="width: 18rem">
+        <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem">
         <div class="card-body">
         <img src="imgs/criminal.png" class="card-img-top" alt="Cartoon Criminal" />
           <h5 class="card-title">${criminal.name}</h5>

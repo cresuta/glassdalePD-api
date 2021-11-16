@@ -1,6 +1,6 @@
 export const Location = (location) => {
   return `
-        <div class="card" style="width: 18rem">
+        <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem">
         <div class="card-body">
         <img src="imgs/jail-house.png" class="card-img-top" alt="Cartoon Jail House" />
           <h5 class="card-title">${location.facilityName}</h5>
