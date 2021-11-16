@@ -1,7 +1,11 @@
 let notes = [];
 
 export const useNotes = () => {
-    return notes.slice();
+    const sortedByDate = notes.sort(
+        (currentEntry, nextEntry) =>
+            Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
+    )
+    return sortedByDate.slice()
 }
 
 export const getNotes = () => {
