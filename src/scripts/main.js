@@ -4,6 +4,9 @@ import { LocationList } from "./locations/LocationList.js";
 import { NoteForm } from "./notes/NoteForm.js";
 import { NoteList } from "./notes/NoteList.js";
 import {ConvictionSelect} from "./convictions/ConvictionSelect.js"
+import {FamilyList} from "./chores/FamilyList.js"
 
 NoteForm();
 NoteList();
+
+

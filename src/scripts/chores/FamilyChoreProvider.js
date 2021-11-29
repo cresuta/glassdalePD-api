@@ -5,7 +5,7 @@ export const useFamilyChores = () => {
 }
 
 export const getFamilyChores = () => {
-    fetch("http://localhost:8088/familychores")
+    return fetch("http://localhost:8088/familyChores")
     .then(res => res.json())
     .then(data => familyChores = data)
 }
