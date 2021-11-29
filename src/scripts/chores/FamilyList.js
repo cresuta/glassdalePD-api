@@ -33,26 +33,6 @@ export const FamilyList = () => {
         `
         })
     })
-   
-
-    // const render = () => {
-    //     contentTarget.innerHTML = family.map(person => {
-    //         // Find related chores
-    //         let relatedChores = familyChores.filter(familyChore => familyChore.familyMemberId === person.id);
-
-    //         // Convert the array from relationship objects to chore objects 
-    //         relatedChores = relatedChores.map(relatedChore => {
-    //             return chores.find(chore => chore.id === relatedChore.choreId)
-    //         })
-
-    //         // Get HTML representation of product
-    //         const html = FamilyMember(person,relatedChores)
-    //         return html;
-    //     }).join("")
-    // }
-    
-    // render();
-
 }
 
 familyChoresNavLink.addEventListener("click", function () {
